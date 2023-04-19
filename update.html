@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUVI - Edit Profile</title>
+</head>
+<body>
+    <h1>Profile Update</h1>
+    <div class="form">
+        <div>
+            <input type="text" name="name" id="name" placeholder="Name">
+        </div>
+        <div>
+            <select name="gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Transgender">Transgender</option>
+                <option value="Rather not Say">Rather not Say</option>
+            </select>
+        </div>
+        <div>
+            <input type="date" placeholder="DOB" value="" name="dob" id="dob" min="1950-01-01" max="2030-12-31">
+        </div>
+        <div>
+            <input type="tel" name="contact" id="contact" placeholder="Contact">
+        </div>
+        <div>
+            <input type="email" name="email" id="email" disabled>
+        </div>
+        <div>
+            <button type="submit" onclick="update()">Update</button>
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/update.js"></script>
+</body>
+</html>
